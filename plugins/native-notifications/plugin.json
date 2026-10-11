@@ -1,0 +1,13 @@
+{
+  "id": "native-notifications",
+  "name": "Windows 原生通知",
+  "version": "0.4.3",
+  "entry_dll": "WinLand.NativeNotifications.dll",
+  "api_version": 2,
+  "min_host_version": "2.4.0",
+  "description": "把 Windows 系统通知显示到灵动岛：简要条滚动显示正文，悬停展开全文；未读可查看、打开或一键清除，已读同步清掉系统通知中心里的记录。",
+  "author": "Timi",
+  "tags": ["notification", "windows", "通知"],
+  "icon_glyph": "\uE7F4",
+  "license": "GPL-3.0-only"
+}
