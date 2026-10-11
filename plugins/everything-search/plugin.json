@@ -1,7 +1,7 @@
 {
   "id": "everything-search",
   "name": "Everything搜索",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "entry_dll": "EverythingSearch.dll",
   "api_version": 2,
   "min_host_version": "2.4.0",
@@ -11,6 +11,7 @@
   "license": "MIT",
   "tags": ["search", "files", "productivity"]
 }
+
 
 
 
