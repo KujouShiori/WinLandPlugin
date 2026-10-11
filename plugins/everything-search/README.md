@@ -52,6 +52,8 @@
 **搜索不到结果？**
 确认 Everything 正在运行（托盘有图标）。插件的设置页会显示当前连接状态。
 
+Everything 与 WinIsland 的启动顺序**没有要求**：两者互相独立启动。插件每 3 秒重试一次连接，若 WinIsland 先启动、Everything 后启动，插件会自动接上，胶囊上的状态也会跟着更新，不需要重启 WinIsland。
+
 **只能按文件名搜，不能按路径搜？**
 说明在用窗口消息后端。把 `Everything64.dll` 放进插件目录即可启用路径匹配。
 
@@ -96,4 +98,5 @@ src/EverythingSearch/
 ## 许可
 
 MIT
+
 
