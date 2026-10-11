@@ -60,7 +60,7 @@
 
 ## 兼容性
 
-- WinIsland / WinLand **1.1.3+**（宿主 SDK 2.4.0）
+- WinIsland / WinLand **1.1.3+**（宿主 SDK **2.4.0**，`plugin.json` 已声明该门槛）
 - Windows 10 1809+ / Windows 11
 - 已在 Windows 11 (26100)、2560×1600 @150% 上测试
 
@@ -96,3 +96,4 @@ src/EverythingSearch/
 ## 许可
 
 MIT
+
