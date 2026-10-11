@@ -1,0 +1,13 @@
+{
+  "id": "windows-notification-bridge",
+  "name": "Windows 通知桥",
+  "version": "1.1.0",
+  "entry_dll": "WindowsMessage.dll",
+  "api_version": 2,
+  "min_host_version": "2.3.0",
+  "description": "将 Windows 应用通知显示为带应用图标的灵动岛卡片，保留通知中心记录。",
+  "author": "luolan",
+  "icon_glyph": "\uE7F4",
+  "license": "MIT",
+  "tags": ["notifications", "windows", "productivity"]
+}

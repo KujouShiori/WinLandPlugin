@@ -12,14 +12,15 @@ WinIsland 的「设置 → 插件市场」只请求本仓库根目录的 **[inde
 <!-- PLUGINS:START -->
 | 图标 | 插件（Id） | 版本 | 作者 | 说明 |
 | :---: | :--- | :---: | :--- | :--- |
+| ![](plugins/clipboard-island/logo.png) | **剪贴板岛**<br/>`clipboard-island` | 1.2.1 | luolangaga | 复制文字或图片时岛上弹提示；展开就是最近几条历史，点任意一条直接粘进你正在输入的窗口 |
+|  | **开机时长**<br/>`uptime-clock` | 1.0.0 | zlwzk | 圆圈进度展示开机时长（24 小时一圈），展开显示 CPU 温度与开机记录 |
+| ![](plugins/device-island/logo.png) | **设备插拔岛**<br/>`device-island` | 1.0.0 | luolangaga | 插 U 盘 / 耳机 / 手柄时岛上自动冒出；展开逐台列出当前设备，带「打开」「安全弹出」 |
+| ![](plugins/pomodoro-island/logo.png) | **时钟岛**<br/>`pomodoro-island` | 1.0.0 | hitikem | 灵动岛上的番茄钟 + 随手倒计时：会漏沙会翻转的矢量沙漏，点击岛体打开白色控制台，自动记录今日完成情况。 |
+| ![](plugins/weather-island/logo.png) | **天气小岛**<br/>`weather-island` | 1.2.0 | luolan | 小岛显示当前温度，展开看三天预报，点一下弹出大卡片：实况细节、24 小时逐时、7 天预报、日出日落与空气质量。配色与天气图标跟随岛体明暗，数据来自 Open-Meteo，不用注册也不用填密钥。 |
+| ![](plugins/hw-monitor/logo.png) | **硬件监控**<br/>`hw-monitor` | 1.0.2 | WinIsland | 常驻硬件信息：小岛显示 CPU/GPU/网络/帧率，大岛显示前台窗口 FPS、CPU、GPU 与上下传速度 |
 | ![](plugins/clash-verge-island/logo.png) | **Clash 小岛**<br/>`clash-verge-island` | 2.0.2 | hit | 小岛显示 Clash Verge 当前节点和延迟（国旗按真实出口 IP 识别），展开后可在岛上直接换节点、切模式、切场景、更新订阅，点一下弹出大卡片：节点列表、按地区筛选、谁在用流量、今日与本月流量统计。自动读取 Clash Verge 的连接参数，只需在它里面打开「外部控制」。 |
 |  | **FlClash 小岛**<br/>`flclash-island` | 1.4.0 | Thesed | 为 FlClash 提供国旗、实时网速曲线、岛内节点切换和单节点延迟测试，内置首次使用引导。 |
-| ![](plugins/clipboard-island/logo.png) | **剪贴板岛**<br/>`clipboard-island` | 1.2.1 | luolangaga | 复制文字或图片时岛上弹提示；展开就是最近几条历史，点任意一条直接粘进你正在输入的窗口 |
-| ![](plugins/weather-island/logo.png) | **天气小岛**<br/>`weather-island` | 1.2.0 | luolan | 小岛显示当前温度，展开看三天预报，点一下弹出大卡片：实况细节、24 小时逐时、7 天预报、日出日落与空气质量。配色与天气图标跟随岛体明暗，数据来自 Open-Meteo，不用注册也不用填密钥。 |
-|  | **开机时长**<br/>`uptime-clock` | 1.0.0 | zlwzk | 圆圈进度展示开机时长（24 小时一圈），展开显示 CPU 温度与开机记录 |
-| ![](plugins/pomodoro-island/logo.png) | **时钟岛**<br/>`pomodoro-island` | 1.0.0 | hitikem | 灵动岛上的番茄钟 + 随手倒计时：会漏沙会翻转的矢量沙漏，点击岛体打开白色控制台，自动记录今日完成情况。 |
-| ![](plugins/hw-monitor/logo.png) | **硬件监控**<br/>`hw-monitor` | 1.0.2 | WinIsland | 常驻硬件信息：小岛显示 CPU/GPU/网络/帧率，大岛显示前台窗口 FPS、CPU、GPU 与上下传速度 |
-| ![](plugins/device-island/logo.png) | **设备插拔岛**<br/>`device-island` | 1.0.0 | luolangaga | 插 U 盘 / 耳机 / 手柄时岛上自动冒出；展开逐台列出当前设备，带「打开」「安全弹出」 |
+|  | **Windows 通知桥**<br/>`windows-notification-bridge` | 1.1.0 | luolan | 将 Windows 应用通知显示为带应用图标的灵动岛卡片，保留通知中心记录。 |
 <!-- PLUGINS:END -->
 
 ## 目录结构
