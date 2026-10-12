@@ -35,6 +35,8 @@ public sealed class MediaPlugin : IslandPluginBase
     private bool _enabled;
     private bool _spotlightOpen;
     private int _priority = DefaultPriority;
+    private readonly MediaPriorityPolicy _priorityPolicy = new();
+    private bool _live;
     private int _refreshVersion;
     private string? _thumbTrackKey;
     private string? _lastSourceAppId;
@@ -83,10 +85,11 @@ public sealed class MediaPlugin : IslandPluginBase
         Context.OnSettingsChanged("lyrics_offset", () => _vm.LyricsOffsetSeconds = Settings.Get("lyrics_offset", 0d));
         Context.OnSettingsChanged("priority", () =>
         {
-            _priority = Settings.Get("priority", DefaultPriority);
-            _content = BuildContent();
-            UpdateContent(_content);
+            RefreshPriority();
         });
+        Context.OnSettingsChanged("auto_priority", RefreshPriority);
+        Context.OnSettingsChanged("playing_priority", RefreshPriority);
+        Context.OnSettingsChanged("idle_priority", RefreshPriority);
 
         if (!Settings.Get("welcome_shown", false))
         {
@@ -178,7 +181,25 @@ public sealed class MediaPlugin : IslandPluginBase
         }
     }
 
-    private void SetLive(bool show) => SetContent(show ? _content : null);
+    private void SetLive(bool show)
+    {
+        _live = show;
+        RefreshPriority();
+        SetContent(show ? _content : null);
+    }
+
+    private void RefreshPriority()
+    {
+        var automatic = Settings.Get("auto_priority", true);
+        var next = _priorityPolicy.Evaluate(_live && _vm.IsPlaying,
+            System.Diagnostics.Stopwatch.GetElapsedTime(0), automatic,
+            Math.Clamp(Settings.Get(automatic ? "playing_priority" : "priority", DefaultPriority), 0, 999),
+            Math.Clamp(Settings.Get("idle_priority", 0), 0, 999));
+        if (_priority == next) return;
+        _priority = next;
+        _content = BuildContent();
+        if (_live) UpdateContent(_content);
+    }
 
     private void OnManagerCurrentSessionChanged(GlobalSystemMediaTransportControlsSessionManager sender, CurrentSessionChangedEventArgs args)
         => RunOnUI(() => _ = ReconcileSessionsAsync());
@@ -209,6 +230,8 @@ public sealed class MediaPlugin : IslandPluginBase
     private void WatchdogTick()
     {
         if (!_enabled || _shuttingDown) return;
+
+        RefreshPriority();
 
         var interval = _session == null ? IdleSyncInterval : LiveSyncInterval;
         if (DateTime.UtcNow - _lastSyncUtc < interval) return;
@@ -460,6 +483,7 @@ public sealed class MediaPlugin : IslandPluginBase
             }
 
             _vm.IsPlaying = status == GlobalSystemMediaTransportControlsSessionPlaybackStatus.Playing;
+            RefreshPriority();
             UpdateLevelMonitor();
             StatusText = $"{(_vm.IsPlaying ? "正在播放" : "已暂停")}：{_vm.Title} - {_vm.Artist}（来自 {session.SourceAppUserModelId}）";
             RefreshTimeline();
