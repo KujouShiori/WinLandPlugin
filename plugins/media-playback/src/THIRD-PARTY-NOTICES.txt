@@ -1,0 +1,13 @@
+来源与授权说明
+
+本插件改编自 https://github.com/luolangaga/WinLand
+参考提交：c7d781072264bc4d2e5c851d79f3e1ca4dd2f072
+
+MediaPlugin.cs、MediaViewModel.cs、LyricsService.cs、AudioLevelMonitor.cs 来源于原生 Media 模块并经适配。
+MediaSpotlightView.xaml/.cs 改编自原生聚光歌词卡片。
+MediaIslandView.cs 中的三层光晕、媒体布局和播放控件参考原生 MediaIslandView.xaml/.cs。
+独立部件包装、紧凑及四排歌词布局、文字过渡、QQ 音乐歌词源与匹配修复等为本次改动。
+
+上游仓库在本次检查时没有声明许可证。本投稿以草稿提交，需原作者确认复用及分发许可后再合并发布。
+保留原作者贡献；不将未授权确认的上游内容标记为 MIT。
+包内不分发歌曲音频或第三方歌词缓存。
