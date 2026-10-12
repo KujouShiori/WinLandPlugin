@@ -1,0 +1,18 @@
+{
+  "id": "media-playback",
+  "name": "媒体播放",
+  "version": "1.0.8",
+  "entry_dll": "MediaPlayback.dll",
+  "api_version": 2,
+  "min_host_version": "2.3.0",
+  "description": "独立媒体小部件：双行同步歌词、随音乐闪动的柔和光束和系统媒体播放控制。",
+  "author": "Thesed",
+  "icon_glyph": "",
+  "tags": [
+    "media",
+    "lyrics",
+    "music"
+  ],
+  "homepage": "https://github.com/luolangaga/WinLandPlugin/tree/main/plugins/media-playback",
+  "license": "LicenseRef-Upstream-Permission-Pending"
+}
