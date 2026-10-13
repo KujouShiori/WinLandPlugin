@@ -1,7 +1,7 @@
 {
     "schema":  1,
     "repo":  "luolangaga/WinLandPlugin",
-    "updated":  "2026-10-12T12:30:18Z",
+    "updated":  "2026-10-13T16:24:28Z",
     "count":  12,
     "plugins":  [
                     {
@@ -80,8 +80,8 @@
                     {
                         "id":  "token-meter",
                         "name":  "Token 计岛",
-                        "version":  "1.0.0",
-                        "description":  "实时显示token用量与费用、今日花费与明细、能展开近7天趋势。只读本机会话日志，不联网。",
+                        "version":  "1.1.0",
+                        "description":  "实时显示token用量与费用、今日花费与明细、能展开近7天趋势。默认只读本机会话日志；可选启用服务商用量接口（密钥走环境变量，接口挂了自动降级回本地日志）。",
                         "author":  "KujouShiori",
                         "icon_glyph":  "\uE8EF",
                         "homepage":  "https://github.com/KujouShiori/token-meter",
@@ -95,12 +95,12 @@
                         "api_version":  2,
                         "min_host_version":  "2.4.0",
                         "package":  "plugins/token-meter/token-meter.lwp",
-                        "package_size":  35389,
-                        "sha256":  "698ef8f546193a167541cd222108dda6856b834c9bba19db0a0235737fb66905",
+                        "package_size":  65819,
+                        "sha256":  "8893b0250e83db053e8749503db3b1a9a4f928217c8acd2eaba78f0cf186e2e9",
                         "readme":  "plugins/token-meter/README.md",
                         "logo":  null,
                         "logo_data":  null,
-                        "updated_at":  "2026-10-11T03:45:52Z"
+                        "updated_at":  "2026-10-12T21:26:15Z"
                     },
                     {
                         "id":  "native-notifications",
