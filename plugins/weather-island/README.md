@@ -82,3 +82,6 @@ powershell tools\pack-plugin.ps1 -ProjectDir samples\WeatherIsland -Configuratio
 ## 许可
 
 MIT
+
+## 1.2.1
+修复能见度米到公里的换算，恢复低能见度天气的等级判断。
