@@ -18,7 +18,7 @@ WinIsland 的「设置 → 插件市场」只请求本仓库根目录的 **[inde
 |  | **Token 计岛**<br/>`token-meter` | 1.1.0 | KujouShiori | 实时显示token用量与费用、今日花费与明细、能展开近7天趋势。默认只读本机会话日志；可选启用服务商用量接口（密钥走环境变量，接口挂了自动降级回本地日志）。 |
 | ![](plugins/native-notifications/logo.png) | **Windows 原生通知**<br/>`native-notifications` | 0.5.0 | Timi | 把 Windows 系统通知搬到灵动岛：简要条提醒新消息，悬停查看按应用分组的通知列表，清除时同步删除系统通知中心的记录。 |
 | ![](plugins/clipboard-island/logo.png) | **剪贴板岛**<br/>`clipboard-island` | 1.2.1 | luolangaga | 复制文字或图片时岛上弹提示；展开就是最近几条历史，点任意一条直接粘进你正在输入的窗口 |
-| ![](plugins/weather-island/logo.png) | **天气小岛**<br/>`weather-island` | 1.2.0 | luolan | 小岛显示当前温度，展开看三天预报，点一下弹出大卡片：实况细节、24 小时逐时、7 天预报、日出日落与空气质量。配色与天气图标跟随岛体明暗，数据来自 Open-Meteo，不用注册也不用填密钥。 |
+| ![](plugins/weather-island/logo.png) | **天气小岛**<br/>`weather-island` | 1.2.1 | luolan | 小岛显示当前温度，展开看三天预报，点一下弹出大卡片：实况细节、24 小时逐时、7 天预报、日出日落与空气质量。配色与天气图标跟随岛体明暗，数据来自 Open-Meteo，不用注册也不用填密钥。 |
 |  | **媒体播放**<br/>`media-playback` | 1.0.8 | Thesed | 独立媒体小部件：双行同步歌词、随音乐闪动的柔和光束和系统媒体播放控制。 |
 |  | **开机时长**<br/>`uptime-clock` | 1.0.0 | zlwzk | 圆圈进度展示开机时长（24 小时一圈），展开显示 CPU 温度与开机记录 |
 | ![](plugins/pomodoro-island/logo.png) | **时钟岛**<br/>`pomodoro-island` | 1.0.0 | hitikem | 灵动岛上的番茄钟 + 随手倒计时：会漏沙会翻转的矢量沙漏，点击岛体打开白色控制台，自动记录今日完成情况。 |
