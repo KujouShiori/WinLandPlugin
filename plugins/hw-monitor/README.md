@@ -32,3 +32,6 @@
 
 依赖 `Microsoft.Diagnostics.Tracing.TraceEvent`（微软官方 ETW 封装，用于读帧率），已随插件包分发；
 WinAppSDK / WinUI 运行时由宿主提供，不打进包里。
+
+## 1.0.3
+使用 DXGI 显卡名称与 LUID 配对性能计数器，修复双显卡占用错配；无活动引擎的显卡显示零占用，不再回退到其他显卡。
