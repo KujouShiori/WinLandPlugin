@@ -4,7 +4,7 @@
 小岛第一行是电量最低的那台设备（型号 + 电量），第二行是系统音量（音量条 + 百分比，静音时显示「静音」）；
 展开后逐台列出电量，点岛体打开「超级展开」聚光卡查看全部设备、系统音量、手动刷新或跳转系统设置。
 
-小岛效果截图：[screenshots/island-compact.png](screenshots/island-compact.png)
+小岛效果截图：[screenshots/island-compact.png](https://github.com/zouyingfeng/winland-battery-volume/blob/main/screenshots/island-compact.png)
 
 > 蓝牙电量来自 Windows PnP 设备属性里的 `DEVPKEY_Bluetooth_Battery`（与「设置 → 蓝牙」同一份数据）；
 > 系统音量来自 Windows Core Audio 默认播放设备。不联网、无第三方依赖、不需要管理员权限。
