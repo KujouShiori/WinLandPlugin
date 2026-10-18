@@ -1,0 +1,14 @@
+{
+  "id": "bluetooth-battery",
+  "name": "电量与音量",
+  "version": "1.1.0",
+  "entry_dll": "BluetoothBattery.dll",
+  "api_version": 2,
+  "min_host_version": "2.3.0",
+  "description": "在灵动岛上显示已连接蓝牙设备的电量与系统音量；点岛体查看全部设备、音量并可手动刷新。",
+  "author": "zouyingfeng",
+  "icon_glyph": "\uE702",
+  "homepage": "https://github.com/zouyingfeng/winland-battery-volume",
+  "license": "MIT",
+  "tags": ["bluetooth", "battery", "volume", "device"]
+}
