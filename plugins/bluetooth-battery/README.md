@@ -6,9 +6,17 @@
 
 ## 截图
 
-- 小岛（任务栏胶囊：型号 + 电量 / 音量）：[island-compact.png](https://github.com/zouyingfeng/winland-battery-volume/blob/main/screenshots/island-compact.png)
-- 展开（设备明细，显示完整品牌名）：[island-expanded.png](https://github.com/zouyingfeng/winland-battery-volume/blob/main/screenshots/island-expanded.png)
-- 聚光卡（全部设备 + 系统音量）：[spotlight.png](https://github.com/zouyingfeng/winland-battery-volume/blob/main/screenshots/spotlight.png)
+**小岛（任务栏胶囊：型号 + 电量 / 音量）**
+
+[小岛](https://github.com/zouyingfeng/winland-battery-volume/blob/main/screenshots/island-compact.png)
+
+**展开（设备明细，显示完整品牌名）**
+
+[展开](https://github.com/zouyingfeng/winland-battery-volume/blob/main/screenshots/island-expanded.png)
+
+**聚光卡（全部设备 + 系统音量）**
+
+[聚光卡](https://github.com/zouyingfeng/winland-battery-volume/blob/main/screenshots/spotlight.png)
 
 > 蓝牙电量来自 Windows PnP 设备属性里的 `DEVPKEY_Bluetooth_Battery`（与「设置 → 蓝牙」同一份数据）；
 > 系统音量来自 Windows Core Audio 默认播放设备。不联网、无第三方依赖、不需要管理员权限。
