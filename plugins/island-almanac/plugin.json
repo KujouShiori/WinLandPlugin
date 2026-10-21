@@ -1,0 +1,14 @@
+{
+  "id": "island-almanac",
+  "name": "岛历",
+  "version": "1.0.0",
+  "entry_dll": "IslandAlmanac.dll",
+  "api_version": 2,
+  "min_host_version": "2.4.0",
+  "description": "桌面上的时间仪表：小岛常驻今天日期，悬停看当月月历、下一个节日与节气，点开是完整月历与提醒。主打中国历法（农历/节气/调休补班），联网只用在你同意的放假数据与订阅地址。",
+  "author": "机械",
+  "icon_glyph": "\uE787",
+  "homepage": "https://github.com/royluobox/island-almanac",
+  "license": "MIT",
+  "tags": ["calendar", "life", "holiday", "lunar"]
+}
