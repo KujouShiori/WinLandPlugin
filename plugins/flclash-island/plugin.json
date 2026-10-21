@@ -1,7 +1,7 @@
 {
   "id": "flclash-island",
   "name": "FlClash 小岛",
-  "version": "1.6.0",
+  "version": "1.7.1",
   "entry_dll": "FlClashIsland.dll",
   "api_version": 2,
   "min_host_version": "2.3.0",
